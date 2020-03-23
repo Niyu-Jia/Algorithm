@@ -1,0 +1,18 @@
+percolation.java
+
+this algorithm is finding threshold probability that can percolate a system.
+
+Assume a grid table of NxN, each grid can be open or close. If two grids are adjecent and both open, they are connected.
+
+1. Each gird has same probability p to be open, (1-p) to be closed.
+2. A system percolates if any grid on the bottom is connected to any of the grid on the top.
+3. We want to know the p that can make the system percolate almost surely
+
+
+Process:
+1. Let all the grids be closed at the beginning
+2. With each time, randomly choose a grid to be open
+3. Check whether the system percolates; if yes, calculate the propotion of open grids;
+ if not, continuly choose another grid to be open
+
+

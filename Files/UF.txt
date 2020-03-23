@@ -1,0 +1,16 @@
+UF.java 
+
+this is an algorithm finding the connectivity using tree-based model.
+
+
+Methods:
+
+union(a,b) : connect a and b
+find(a) : find the root of a
+
+if a and b have same root, they are connected.
+
+Notes: 
+1. all the nodes in one tree are all connected to each other
+2. when doing union, we add small tree to the larger tree to make structure flat
+3. every time we got parent which is not root, change its parent directly to root value
